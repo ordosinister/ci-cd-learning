@@ -18,6 +18,12 @@ jobs:
         with:
           node-version: 24
 
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
       - name: Show Node.js version
         run: node --version
 
